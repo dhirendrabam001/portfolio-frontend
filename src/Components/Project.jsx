@@ -56,7 +56,7 @@ const Project = () => {
                     </div>
                     <div className="cards-body">
                       <div className="left">
-                        <div className="card-content d-flex align-items-center gap-4">
+                        <div className="card-content d-flex align-items-center gap-4 gap-sm-1">
                           {item.tech.map((item, index) => (
                             <button key={index}>{item}</button>
                           ))}

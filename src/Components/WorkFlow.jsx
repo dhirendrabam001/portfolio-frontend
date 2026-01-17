@@ -5,7 +5,7 @@ const WorkFlow = () => {
   return (
     <section className="work-main py-3 dashboard-wrok">
       <div className="work-section">
-        <div className="row g-5">
+        <div className="row g-5 g-sm-0">
           <div className="col-12 col-md-6 col-lg-6">
             <AnimationPath direction={"left"} delay={0.25}>
               <div className="wrok-left dashboard-work">
@@ -20,7 +20,7 @@ const WorkFlow = () => {
               </div>
             </AnimationPath>
           </div>
-          <div className="col-12 col-md-6 col-lg-6 text-end">
+          <div className="col-12 col-md-6 col-lg-6 text-end text-sm-center">
             <AnimationPath direction="left" delay={0.25}>
               <div className="btn-service btn-services pt-5 mt-5">
                 <Link to="/contact">

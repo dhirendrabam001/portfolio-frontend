@@ -198,7 +198,7 @@ const Contact = () => {
             <div className="contact-form">
               <AnimationPath direction="left" delay={0.25}>
                 <form onSubmit={handleSubmit}>
-                  <div className="row justify-content-center align-items-center g-4">
+                  <div className="row justify-content-center align-items-center g-4 g-sm-1">
                     <div className="col-12 col-md-6 col-lg-6">
                       <div className="contact-form-info">
                         <div className="mb-3">
