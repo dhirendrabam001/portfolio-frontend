@@ -94,8 +94,8 @@
   }
   .work-main {
     margin-top: 0px;
-    width: 107%;
-    height: 100vh !important;
+    width: 100%;
+    height: 45vh !important;
   }
   .btn-services {
     width: 300px;
@@ -124,7 +124,7 @@
   }
   .dashboard-main-info .homecon-info-sec {
     width: 80% !important;
-    height: 40vh !important;
+    height: 18vh !important;
     margin-left: 215px !important;
   }
 
@@ -136,9 +136,7 @@
   .about-more-details {
     margin-left: 66px;
   }
-  .combine-routes .footer-infosss {
-    height: 30vh !important;
-  }
+
   /* RESUME PAGE */
   .resume-header h2 {
     font-size: 50px !important;
@@ -178,10 +176,19 @@
   .main-scroll-content {
     margin-left: 32px;
   }
-  /* .sidebar-main {
-    flex-direction: column;
+  .img-cons img {
+    width: 100%;
+    height: 520px;
+  }
+  .card-img img {
+    height: 300px;
+  }
+  .card-info .cards-body {
     display: flex;
-  } */
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+  }
 
   .sidebar-profile .sidebar-img,
   .sidebar-profile .sidebar-content,
@@ -368,7 +375,7 @@
   }
   .footer-info {
     width: 100%;
-    height: 35vh;
+    height: 14vh;
   }
 
   /* PAGES RESPONSIVE */
@@ -388,11 +395,11 @@
     margin-left: 215px !important;
   }
   .blog-pages .footer-infos {
-    height: 44vh;
+    height: 20vh;
   }
   .dashboard-main-info .homecon-info-sec {
     width: 100% !important;
-    height: 48vh !important;
+    height: 22vh !important;
     margin-left: 0px !important;
     padding: 0px 20px !important;
   }
@@ -403,7 +410,7 @@
     margin-top: 0px !important;
   }
   .combine-routes .footer-infosss {
-    height: 50vh !important;
+    height: 22vh !important;
   }
   /* RESUME PAGE */
   .resume-header h2 {
@@ -440,6 +447,9 @@
 @media (min-width: 360px) and (max-width: 480px) {
   .highlight {
     font-size: 32px;
+  }
+  .about-left {
+    margin-top: 30px;
   }
   .sidebar-main {
     flex-direction: column;
@@ -700,20 +710,20 @@
     margin-top: -25%;
     margin-left: 28%;
   } */
-  /* .work-section .btn-service button {
+  .work-section .btn-service button {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-top: -3%;
-    margin-left: 3%;
-  } */
+    margin-top: -40%;
+    margin-left: 18% !important;
+  }
   .work-section {
     margin-left: 0px;
     padding: 0px 18px;
   }
   .work-main {
     width: 100%;
-    height: 100vh !important;
+    height: 40vh !important;
     overflow: hidden;
   }
 
@@ -745,7 +755,7 @@
   }
   .footer-info {
     width: 100%;
-    height: 70vh;
+    height: 20vh;
     padding: 20px 0px;
   }
   .para-info p {
@@ -758,7 +768,7 @@
   /* PAGES RESPONSIVE */
   .blog-pages .footer-infos {
     width: 100%;
-    height: 70vh !important;
+    height: 20vh !important;
   }
   .blog-main-content h2.fs-1.fw-bold {
     font-size: 23px !important;
@@ -775,7 +785,7 @@
   }
   .dashboard-main-info .homecon-info-sec {
     width: 100% !important;
-    height: 70vh !important;
+    height: 20vh !important;
     margin-left: 0px !important;
     padding: 0px 22px !important;
     margin-top: 16px !important;
@@ -787,7 +797,7 @@
     margin-top: -18px !important;
   }
   .combine-routes .footer-infosss {
-    height: 75vh !important;
+    height: 20vh !important;
   }
   /* RESUME PAGE */
   .resume-header h2 {
@@ -826,4 +836,50 @@
   .gy-5 {
     --bs-gutter-y: 0rem;
   }
+  .dashboard-img {
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+    height: 200px !important;
+  }
+
+  .dashboard-img img {
+    height: 200px !important;
+  }
+  .service-heading {
+    text-align: start !important;
+    padding: 0px 0px !important;
+  }
+  .service-heading p {
+    margin: 0px 0px !important;
+  }
+  .hire-btn {
+    padding: 15px 10px;
+  }
+  .dashboardpage-main h2,
+  p {
+    text-align: justify;
+  }
+  .portfolio-project {
+    margin-top: 30px;
+  }
+  .resume-section {
+    margin-top: 28px;
+    width: 100%;
+    background: var(--bg-sidebar);
+    border-radius: 30px;
+    padding: 25px 30px;
+  }
+  .resume-media .row {
+    margin: 0px 0px !important;
+  }
+  .blog-email {
+    margin-top: 30px;
+  }
+  .contact-media {
+    margin-top: 20px;
+  }
+}
+
+@media (min-width: 1400px) {
 }

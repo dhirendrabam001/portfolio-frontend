@@ -23,7 +23,7 @@ const BlogSection = () => {
             </p>
           </div>
           <div className="blog-email">
-            <div className="row justify-content-center g-5 g-md-2">
+            <div className="row justify-content-center g-3 g-md-2">
               <div className="col-12 col-md-69 col-lg-9">
                 <div className="blog-email-left">
                   <div class="mb-3">

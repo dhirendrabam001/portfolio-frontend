@@ -4,14 +4,14 @@ const AboutMore = () => {
   return (
     <div className="about-more">
       <div className="row g-5 align-items-center">
-        <div className="col-12 col-md-5 col-lg-5 order-2 order-md-1">
+        <div className="col-12 col-md-5 col-lg-5 col-xxl-4 order-2 order-md-1">
           <AnimationPath direction="left">
             <div className="img-cons">
               <img src="/mainimg.webp" className="img-fluid" alt="hero" />
             </div>
           </AnimationPath>
         </div>
-        <div className="col-12 col-md-7 col-lg-7 order-1 order-md-2">
+        <div className="col-12 col-md-7 col-lg-7 col-xxl-8 order-1 order-md-2">
           <AnimationPath direction="bottom" delay={0.1}>
             <div className="about-left">
               <span>Let Me Introduce Myself!</span>
