@@ -1,0 +1,759 @@
+@media (min-width: 992px) and (max-width: 1199.98px) {
+  body {
+    overflow-x: hidden;
+  }
+  .sidebar-main {
+    width: 100%;
+  }
+  .sidebar-profile {
+    width: 20%;
+    min-height: 100vh !important;
+  }
+  .homecon {
+    width: 50%;
+    margin-left: 215px;
+  }
+  .img-con {
+    width: 20%;
+  }
+  .img-con img {
+    width: 100%;
+  }
+
+  .type-text h3 {
+    font-size: 18px;
+  }
+
+  .highlight {
+    font-size: 35px;
+  }
+
+  .main-content-right p {
+    font-size: 14px;
+    line-height: 28px;
+  }
+  .view-btn {
+    margin-top: 40px !important;
+  }
+
+  .banner-content {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+
+  .banner-content span {
+    opacity: 0.5;
+  }
+
+  .banner-content h2 {
+    font-size: 32px;
+    margin: 0;
+  }
+
+  .banner-content p {
+    font-size: 12px;
+    line-height: 1.4;
+    margin: 0;
+  }
+  .img-con {
+    width: 250px;
+  }
+  .img-con img {
+    width: 200px !important;
+  }
+  .img-con::before {
+    position: absolute;
+    background: var(--primary);
+    width: 92%;
+    height: 100%;
+    left: -7px;
+    content: "";
+    z-index: 0;
+    animation: rotateBg 8s ease-in-out infinite;
+  }
+  .second-card {
+    padding: 14px;
+    margin-top: 3px;
+  }
+  .title-bar p {
+    font-size: 14px;
+  }
+  .res-btn {
+    font-size: 10px;
+    padding: 12px !important;
+  }
+
+  .service-card .col-md-4 {
+    flex: 0 0 33.3333% !important;
+    max-width: 33.3333% !important;
+    width: 33.3333% !important;
+  }
+  .content-info h5 {
+    font-size: 16px;
+  }
+  .work-main {
+    margin-top: 0px;
+    width: 107%;
+    height: 100vh !important;
+  }
+  .btn-services {
+    width: 300px;
+  }
+
+  .wrok-left h2 {
+    font-size: 35px;
+  }
+  .card-content {
+    display: flex;
+    gap: 6px !important;
+  }
+  .img-project {
+    width: 400px !important;
+  }
+  .left-hr {
+    margin-top: 20px;
+  }
+
+  /* PAGES RESPONSIVE */
+  .blog-main-content h2.fs-1.fw-bold {
+    font-size: 34px !important;
+  }
+  .blog-main-content h2.fs-1.fw-bold {
+    font-size: 30px !important;
+  }
+  .dashboard-main-info .homecon-info-sec {
+    width: 80% !important;
+    height: 40vh !important;
+    margin-left: 215px !important;
+  }
+
+  /* ABOUS-US PAGE */
+  .homecon-info-about {
+    margin-top: -50px !important;
+    margin-left: 158px !important;
+  }
+  .about-more-details {
+    margin-left: 66px;
+  }
+  .combine-routes .footer-infosss {
+    height: 30vh !important;
+  }
+  /* RESUME PAGE */
+  .resume-header h2 {
+    font-size: 50px !important;
+    font-weight: bold;
+    color: var(--primary);
+  }
+  .resume-header-right {
+    font-size: 8px !important;
+    padding-left: 8px !important;
+  }
+  .resume-profile-img img {
+    width: 100px !important;
+  }
+  .expeerience-content h5 {
+    font-size: 18px !important;
+  }
+  .row-main {
+    display: flex !important;
+    flex-direction: column !important;
+  }
+  .resume-main a {
+    font-size: 16px !important;
+  }
+  /* BLOG SECTION */
+  .blog-email .blog-email-right button {
+    padding: 15px 12px !important;
+
+    font-size: 12px !important;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 991.98px) {
+  .sidebar-main {
+    display: flex;
+    flex-direction: column;
+  }
+  .main-scroll-content {
+    margin-left: 32px;
+  }
+  /* .sidebar-main {
+    flex-direction: column;
+    display: flex;
+  } */
+
+  .sidebar-profile .sidebar-img,
+  .sidebar-profile .sidebar-content,
+  .sidebar-profile .social-media,
+  .sidebar-profile .hire-btn,
+  .sidebar-profile hr {
+    display: none !important;
+  }
+  .homecon {
+    width: 100%;
+    margin-left: 60px;
+  }
+  .type-text {
+    font-size: 20px !important;
+  }
+  .highlight {
+    font-size: 30px;
+  }
+  .iconbar {
+    position: fixed;
+    top: 0px;
+    left: 0;
+    width: 100%;
+    pointer-events: none;
+  }
+  .iconbar .icon-bar,
+  .iconbar .icon {
+    pointer-events: auto;
+  }
+  /* .icon-bar {
+    height: auto;
+    margin: 0;
+    padding: 0 14px;
+    display: flex;
+    align-items: center;
+  } */
+  .icon-bar {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    top: auto;
+    width: 100%;
+    height: 50px !important;
+    margin-top: 0px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: var(--primary);
+    z-index: 3000;
+    padding: 0px 0px !important;
+  }
+
+  .icon-bar .icon {
+    width: 32px;
+    height: 32px;
+    font-size: 14px;
+    padding: 6px !important;
+    border-radius: 50%;
+    margin-top: 10px !important;
+  }
+  .bg-warning {
+    background-color: rgba(
+      var(--bs-warning-rgb),
+      var(--bs-bg-opacity)
+    ) !important;
+    padding: 4px 4px !important;
+  }
+  .sidebar-profile {
+    background: black;
+    width: 0%;
+    z-index: 1000;
+  }
+  .navbar-info {
+    position: fixed;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100%;
+    padding: 10px 20px;
+    background: var(--bg-main);
+    z-index: 20000;
+    box-shadow: 0 10px 35px rgba(0, 0, 0, 0.45);
+  }
+  .light .navbar-info {
+    background-color: black;
+  }
+
+  .navbar-info .nav {
+    display: flex;
+    flex-direction: row !important;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0px !important;
+  }
+
+  .navbar-info .nav-item {
+    text-align: center;
+  }
+  .navbar-info a.nav-link {
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: center;
+    justify-content: center;
+    gap: 4px;
+    color: #ffffff !important;
+  }
+  .light .navbar-info a.nav-link {
+    color: #fff !important;
+  }
+
+  .navbar-info a.nav-link svg {
+    display: block !important;
+    visibility: visible !important;
+    opacity: 1 !important;
+    font-size: 14px !important;
+    color: #ffffff !important;
+  }
+
+  .navbar-info a.nav-link .me-2 {
+    margin-right: 0 !important;
+  }
+
+  .img-con {
+    order: 2;
+    display: flex;
+    justify-content: center;
+    margin-top: 60px;
+  }
+
+  .img-con img {
+    width: 100% !important;
+  }
+
+  .left-hr {
+    display: none;
+  }
+  .service-card .col-lg-3 {
+    flex: 0 0 50% !important;
+    max-width: 50% !important;
+    width: 50% !important;
+  }
+  .content-img .img-npm {
+    width: 15px !important;
+  }
+  .content-info h5 {
+    font-size: 18px;
+  }
+  .content-info p {
+    font-size: 12px;
+  }
+  .title-bar p {
+    font-size: 14px;
+  }
+  .work-main {
+    height: auto;
+  }
+
+  .work-section {
+    margin-left: 0;
+    padding: 40px 20px;
+    text-align: center;
+  }
+
+  .wrok-left h2 {
+    font-size: 28px;
+  }
+  .btn-service {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .title-line h2 {
+    font-size: 25px;
+  }
+  .project-info p {
+    font-size: 12px !important;
+  }
+  .btn-servicess button {
+    font-size: 14px;
+  }
+  .pages {
+    margin: 0px 0px !important;
+  }
+  .footer-info {
+    width: 100%;
+    height: 35vh;
+  }
+
+  /* PAGES RESPONSIVE */
+  .homecon-info {
+    width: 100% !important;
+    margin-left: 0px !important;
+  }
+  .blog-main-content h2.fs-1.fw-bold {
+    font-size: 34px !important;
+  }
+  .blog-main-content h2.fs-1.fw-bold {
+    font-size: 30px !important;
+  }
+
+  .homecon-info-sec {
+    height: 0vh !important;
+    margin-left: 215px !important;
+  }
+  .blog-pages .footer-infos {
+    height: 44vh;
+  }
+  .dashboard-main-info .homecon-info-sec {
+    width: 100% !important;
+    height: 48vh !important;
+    margin-left: 0px !important;
+    padding: 0px 20px !important;
+  }
+  /* ABOUT US SECTION */
+  .homecon-info-about {
+    width: 100% !important;
+    margin-left: 0px !important;
+    margin-top: 0px !important;
+  }
+  .combine-routes .footer-infosss {
+    height: 50vh !important;
+  }
+  /* RESUME PAGE */
+  .resume-header h2 {
+    font-size: 40px !important;
+    font-weight: bold;
+    color: var(--primary);
+  }
+  .resume-header-right {
+    font-size: 8px !important;
+    padding-left: 8px !important;
+  }
+  .resume-profile-img img {
+    width: 100px !important;
+  }
+  .expeerience-content h5 {
+    font-size: 18px !important;
+  }
+
+  .row-main {
+    display: flex !important;
+    flex-direction: column !important;
+  }
+  .resume-main a {
+    font-size: 16px !important;
+  }
+  /* BLOGPAGE */
+  .blog-email .blog-email-right button {
+    padding: 15px 12px !important;
+
+    font-size: 12px !important;
+  }
+}
+
+@media (min-width: 320px) and (max-width: 575px) {
+  .sidebar-main {
+    flex-direction: column;
+    margin-top: 0;
+  }
+
+  .iconbar,
+  .sidebar-profile {
+    position: static !important;
+    width: 100% !important;
+    height: auto !important;
+  }
+
+  .homecon,
+  .img-con {
+    margin-left: -50px !important;
+    width: 80% !important;
+  }
+
+  .navbar-info {
+    position: relative;
+    z-index: 10;
+  }
+  /* .project-tabs,
+
+  .project-tabs * {
+    pointer-events: auto !important;
+    z-index: 9999;
+    position: relative;
+  } */
+
+  .main-scroll-content {
+    width: 100%;
+    margin-left: 10px;
+  }
+  .left-hr {
+    display: none;
+  }
+  .sidebar-profile {
+    width: 0%;
+  }
+  .sidebar-profile .sidebar-img,
+  .sidebar-profile .sidebar-content,
+  .sidebar-profile .social-media,
+  .sidebar-profile .hire-btn,
+  .sidebar-profile hr {
+    display: none !important;
+  }
+  .sidebar-main {
+    width: 100%;
+    flex-direction: column;
+    justify-content: center;
+  }
+  /* .homecon {
+    width: 100%;
+    margin-left: 40px;
+  } */
+  .sidebar-profile {
+    background: black;
+  }
+  .navbar-info {
+    position: fixed;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100%;
+    padding: 10px 20px;
+    background: var(--bg-main);
+    z-index: 20000;
+    box-shadow: 0 10px 35px rgba(0, 0, 0, 0.45);
+  }
+  .light .navbar-info {
+    background-color: black;
+  }
+
+  .navbar-info .nav {
+    display: flex;
+    flex-direction: row !important;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0px !important;
+  }
+
+  .navbar-info .nav-item {
+    text-align: center;
+  }
+  .navbar-info a.nav-link {
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: center;
+    justify-content: center;
+    gap: 4px;
+    color: #ffffff !important;
+  }
+  .light .navbar-info a.nav-link {
+    color: #fff !important;
+  }
+  .iconbar {
+    width: 100%;
+  }
+  .icon-bar {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    top: auto;
+    width: 100%;
+    height: 50px !important;
+    margin-top: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: var(--primary);
+    /* box-shadow: 0px 0px 15px 20px white; */
+    z-index: 3000;
+    padding: 0px 0px !important;
+  }
+
+  .icon-bar .icon {
+    width: 32px;
+    height: 32px;
+    font-size: 14px;
+    padding: 6px !important;
+    border-radius: 50%;
+    margin-top: 10px !important;
+  }
+  .icon-bar {
+    pointer-events: none;
+  }
+
+  .icon-bar .icon {
+    pointer-events: auto;
+  }
+  .bg-warning {
+    background-color: rgba(
+      var(--bs-warning-rgb),
+      var(--bs-bg-opacity)
+    ) !important;
+    padding: 7px 12px !important;
+  }
+
+  .icon-bar .badge {
+    top: -2px;
+    right: -2px;
+    font-size: 9px;
+  }
+  /* .about-more {
+    padding-bottom: 20px;
+  } */
+  .navbar-info {
+    margin: 0px;
+  }
+  .navbar-info .nav {
+    display: flex !important;
+    flex-direction: row !important;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: nowrap;
+    margin: 0;
+  }
+
+  .navbar-info a.nav-link {
+    display: flex !important;
+    align-items: center;
+    justify-content: center;
+    padding: 4px 2px;
+    font-size: 12px;
+    gap: 2px !important;
+    white-space: nowrap;
+    border-radius: 8px;
+  }
+  .icon-bar .icon:nth-child(2),
+  .icon-bar .icon:nth-child(3) {
+    margin-left: 220px;
+    margin-top: -52px;
+  }
+  .service-card .col-lg-3 {
+    flex: 0 0 100% !important;
+    max-width: 100% !important;
+    width: 100% !important;
+  }
+  .banner-counter {
+    margin-top: 40px;
+    margin-left: 20px;
+    padding: 10px 2px;
+  }
+  .img-con {
+    margin-top: 20px;
+  }
+
+  .banner-content h2 {
+    font-size: 25px;
+  }
+  .banner-content p {
+    font-size: 14px;
+  }
+
+  .navbar-info a.nav-link svg {
+    font-size: 12px;
+    display: block;
+  }
+
+  .navbar-info .me-2 {
+    margin-right: 0 !important;
+  }
+  .service-card .col-lg-3 {
+    flex: 0 0 100% !important;
+    max-width: 100% !important;
+    width: 100% !important;
+  }
+  .service-main .btn-service {
+    display: flex;
+    justify-content: center;
+  }
+  .content-info {
+    padding: 20px;
+  }
+  .title-bar p {
+    font-size: 14px;
+  }
+  .work-section {
+    margin-left: 0px; /* sidebar space */
+    padding: 10px;
+  }
+  .work-section .btn-service button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: -25%;
+    margin-left: 28%;
+  }
+
+  .work-section h2 {
+    font-size: 25px !important;
+  }
+  .project-main {
+    margin-top: 20px;
+  }
+  .project-main .btn-service {
+    display: flex;
+    justify-content: center;
+    padding: 0px 0px !important;
+    margin: 0px 0px !important;
+  }
+  .testimonal-sec {
+    padding: 55px 22px;
+  }
+  .blog-main .btn-service {
+    display: flex;
+    justify-content: center;
+  }
+  .footer-info {
+    width: 100%;
+    height: 30vh;
+    padding: 20px 0px;
+  }
+  .para-info p {
+    font-size: 14px;
+    font-weight: 500;
+    margin-top: 0px;
+    text-align: center;
+  }
+
+  /* PAGES RESPONSIVE */
+  .blog-pages .footer-infos {
+    width: 100%;
+    height: 40vh !important;
+  }
+  .blog-main-content h2.fs-1.fw-bold {
+    font-size: 23px !important;
+  }
+  .homecon-info {
+    width: 100% !important;
+    margin-left: 0px !important;
+  }
+  .dashboardpage-main h2 {
+    font-size: 25px !important;
+  }
+  .dashboard-content {
+    margin-top: 40px !important;
+  }
+  .dashboard-main-info .homecon-info-sec {
+    width: 100% !important;
+    height: 46vh !important;
+    margin-left: 0px !important;
+    padding: 0px 22px !important;
+    margin-top: 16px !important;
+  }
+  /* ABOUT US SECTION */
+  .homecon-info-about {
+    width: 100% !important;
+    margin-left: 0px !important;
+    margin-top: -18px !important;
+  }
+  .combine-routes .footer-infosss {
+    height: 50vh !important;
+  }
+  /* RESUME PAGE */
+  .resume-header h2 {
+    font-size: 40px !important;
+    font-weight: bold;
+    color: var(--primary);
+  }
+  .resume-header {
+    text-align: center;
+  }
+  .resume-header-right {
+    font-size: 14px !important;
+    /* padding-left: 8px !important; */
+  }
+  .resume-profile-img img {
+    width: 100px !important;
+  }
+  .expeerience-content h5 {
+    font-size: 18px !important;
+  }
+
+  .resume-main a {
+    font-size: 16px !important;
+  }
+}
