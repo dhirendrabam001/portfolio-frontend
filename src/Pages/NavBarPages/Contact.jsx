@@ -34,7 +34,7 @@ const Contact = () => {
     }
     try {
       const res = await axios.post(
-        "http://localhost:2000/api/user/userData",
+        "https://portfolio-backend-1-zwa0.onrender.com/api/user/userData",
         formData
       );
       toast.success("Thank you for contacting us");
