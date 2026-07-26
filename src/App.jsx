@@ -15,6 +15,7 @@ import Blog from "./Components/Blog";
 import Footer from "./Components/Footer";
 
 function App() {
+  // const router = data
   return (
     <div className="app-layput">
       <SideBarMain />
