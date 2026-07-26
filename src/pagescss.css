@@ -1,0 +1,606 @@
+/* DASHBOARD PAGES */
+.dashboardpage-main {
+  width: 100%;
+  min-height: 100vh;
+}
+.dashboard-content {
+  margin-top: 100px;
+}
+.dashboardpage-main p {
+  font-size: 14px;
+}
+.dashboard-info {
+  padding: 10px 20px;
+  border: 1px solid #534d4d;
+  overflow: hidden;
+}
+.light .dashboard-info {
+  border: 1px solid rgb(245, 232, 232);
+}
+.light .dashboardpage-main p,
+h5 {
+  color: var(--text-muted);
+}
+.light .dashboardpage-main h4 {
+  color: gray;
+}
+.dashboard-info h5 {
+  font-size: 14px;
+  margin: 0px 0px !important;
+}
+.dashboard-info h4 {
+  font-size: 16px;
+  font-weight: bold;
+}
+.dashboard-img {
+  width: 100%;
+  overflow: hidden;
+  position: relative;
+  height: 450px;
+}
+.dashboard-img img {
+  width: 100%;
+  height: 450px;
+  position: absolute;
+  inset: 0;
+  object-fit: cover;
+  transition: transform 0.5s ease, opacity 0.5s;
+}
+.dashboard-img:hover img {
+  transform: scale(1.1);
+  opacity: 0.7;
+}
+.dashboard-para {
+  margin-top: 30px;
+}
+.project-req p {
+  margin: 5px 0px !important;
+}
+
+/* BLOG CSS */
+.homecon-info {
+  width: 82%;
+  padding: 20px 30px;
+  margin-left: 243px;
+  min-height: 100vh;
+}
+.homecon-info-sec {
+  width: 82%;
+  padding: 20px 30px;
+  margin-left: 243px;
+  height: 22vh;
+  overflow: hidden;
+}
+.blogpage-span span {
+  font-size: 14px;
+  color: rgb(124, 118, 118);
+}
+.blogpage-span .bold {
+  color: white;
+}
+.blogpage-img {
+  width: 100%;
+  overflow: hidden;
+  position: relative;
+  height: 400px;
+}
+
+.blogpage-img img {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 400px;
+  object-fit: cover;
+  transition: transform 0.5s ease, opacity 0.5s ease;
+}
+
+.blogpage-img:hover img {
+  transform: scale(1.1);
+  opacity: 0.7;
+}
+
+.blogpage-paragraph {
+  width: 70%;
+  margin: auto;
+}
+.blogpage-paragraph p {
+  font-size: 14px;
+}
+.light .blogpage-paragraph p {
+  color: var(--text-muted);
+}
+.footer-infos {
+  width: 100%;
+  height: 15vh;
+}
+
+/* ABOUT-US PAGES */
+.homecon-info-about {
+  width: 84%;
+  margin-left: 238px;
+  margin-top: -70px;
+  min-height: 100vh;
+}
+
+.aboutus-main {
+  width: 100%;
+  background-image: url(/back.webp);
+  height: 60vh;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  overflow: hidden;
+  position: relative;
+}
+.aboutus-main::before {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+  content: "";
+  background: #3b5bfd70;
+}
+.about-more-details {
+  padding: 10px 30px;
+  overflow: hidden;
+  margin-top: 30px;
+  height: auto;
+}
+.about-more-details .testimonal-sec {
+  padding: 35px 12px;
+}
+.about-more-details .testimonals-main {
+  margin-top: 60px !important;
+}
+.combine-routes .footer-infosss {
+  width: 100%;
+  height: 18vh;
+  padding: 0px 28px !important;
+  margin-left: -13px;
+  overflow: hidden;
+}
+
+/* SERVICES PAGES */
+.service-pages {
+  width: 100%;
+}
+.service-heading p {
+  font-size: 14px;
+}
+.light .service-heading,
+.service-ques p {
+  color: var(--text-muted);
+}
+.service-heading span {
+  color: var(--primary);
+}
+.service-hr {
+  width: 106%;
+  margin-top: 20px;
+  margin-left: -29px;
+}
+.service-comp {
+  width: 100%;
+  overflow: hidden;
+}
+.service-ques {
+  width: 100%;
+}
+.question-content-left {
+  width: 100%;
+  margin-top: 30px;
+}
+
+.faq-accordion {
+  width: 100%;
+  max-width: 700px;
+  margin: 0px auto;
+  /* overflow: hidden; */
+}
+
+.accordion-item-custom {
+  border: 1px solid #333;
+  border-radius: 5px;
+  margin-bottom: 10px;
+  overflow: hidden;
+  transition: all 0.3s;
+}
+.light .accordion-item-custom {
+  border: 1px solid rgb(216, 216, 216);
+}
+
+.accordion-item-custom.active {
+  border: 1px solid #0d6efd;
+}
+
+.accordion-header-custom {
+  margin: 14px 0px;
+  width: 100%;
+  padding: 16px 20px;
+  background-color: var(----bg-main);
+  border: none;
+  color: #fff;
+  cursor: pointer;
+  font-weight: 500;
+  font-size: 14px !important;
+}
+.light .accordion-header-custom {
+  color: rgb(61, 53, 53);
+}
+
+.accordion-header-custom .question-text {
+  font-weight: 600;
+}
+
+.right-icon {
+  font-size: 14px;
+}
+
+.accordion-body-custom {
+  padding: 16px 20px;
+
+  color: #ccc;
+  font-size: 14px;
+  line-height: 1.5;
+}
+
+/* PORTFOLIO PAGES */
+.portfolio-project {
+  margin-top: 70px;
+}
+
+/* RESUME PAGES */
+.light .resume-heading h2 {
+  color: black;
+}
+.download-btn a {
+  padding: 16px 24px;
+  background: var(--primary);
+  border: none !important;
+  color: #fff;
+  font-weight: bold;
+  transition: all 0.5s ease;
+  border-radius: 20px;
+  font-size: 14px;
+}
+.download-btn a:hover {
+  background: black;
+  transform: scale3d(50%);
+}
+
+.resume-section {
+  margin-top: 50px;
+  width: 100%;
+
+  background: var(--bg-sidebar);
+  border-radius: 30px;
+  padding: 80px 30px;
+}
+.resume-header h2 {
+  font-size: 70px;
+  font-weight: bold;
+  color: var(--primary);
+}
+.resume-header h5 {
+  font-size: 23px;
+  color: #fff;
+  font-weight: bold;
+  margin-left: 10px;
+}
+.light .resume-header h5 {
+  color: black;
+}
+.resume-header-right {
+  font-size: 13px;
+  border-left: 1px solid rgba(209, 209, 209, 0.4);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-left: 20px;
+}
+.light .resume-header-right p {
+  color: var(--text-muted);
+}
+.resume-section .resume-line {
+  width: 95%;
+  margin-top: 30px;
+  color: rgb(219, 218, 218);
+}
+.resume-profile {
+  margin-top: 30px;
+}
+.resume-profile p {
+  font-size: 14px;
+  text-align: justify;
+}
+.light .resume-profile p {
+  color: var(--text-muted);
+}
+.resume-profile-img img {
+  width: 130px;
+  border-radius: 50%;
+}
+.resume-content {
+  margin-top: 30px;
+}
+.expeerience-content h5 {
+  color: #fff;
+  font-size: 23px;
+  font-weight: bold;
+  margin: 5px 0px !important;
+}
+.light .expeerience-content h5 {
+  color: var(--text-main) !important;
+}
+.light .resume-right-content h5 {
+  color: var(--text-main) !important;
+}
+.expeerience-content p {
+  font-size: 14px;
+  margin: 0px 0px !important;
+}
+.light .expeerience-content p {
+  color: var(--text-muted);
+}
+.light .experience-date p {
+  color: var(--text-muted);
+}
+.light .experience-para p {
+  color: var(--text-muted);
+}
+.light .experience-para-left p {
+  color: var(--text-muted);
+}
+.light .resume-right-content p {
+  color: var(--text-muted);
+}
+.light .laungage-content-right p {
+  color: var(--text-muted);
+}
+
+.experience-date p {
+  font-size: 14px;
+  font-weight: bold;
+}
+.experience-para p {
+  font-size: 14px;
+  text-align: justify;
+}
+.experience-para-left p {
+  font-size: 14px;
+  margin: 5px 0px !important;
+  text-align: justify;
+}
+
+/* resume-content-right */
+.resume-content-right {
+  border-left: 1px solid rgba(209, 209, 209, 0.4);
+}
+.resume-right-content p {
+  font-size: 14px;
+  margin: 3px 0px !important;
+}
+.education-content-info h5 {
+  font-size: 14px;
+  color: #fff;
+}
+.light .education-content-info h5 {
+  color: var(--text-muted);
+}
+.education-content-info {
+  font-size: 12px;
+  margin: 0px 0px !important;
+}
+.laungage-content-right p {
+  font-size: 14px;
+  margin: 5px 0px !important;
+}
+.resume-media {
+  width: 100%;
+}
+
+.resume-main a {
+  padding: 4px 7px;
+  background: #3a3a3a;
+  border-radius: 50%;
+  font-size: 11px;
+  font-weight: 600;
+  text-align: center;
+  transition: 0.5s ease;
+}
+.resume-main a:hover {
+  background: navy;
+  color: white;
+}
+.resume-main span {
+  font-size: 12px;
+}
+.light .resume-main span {
+  color: var(--text-muted);
+}
+
+/* BLOG PAGES */
+.blog-email {
+  width: 70%;
+  margin: auto;
+  margin-top: 60px;
+}
+.blog-email-left .form-control {
+  background: var(----bg-main);
+  border: 1px solid rgb(68 68 68) !important;
+  padding: 15px 30px;
+  border-radius: 30px;
+  color: white;
+}
+.blog-email-left .form-control::placeholder {
+  color: var(--text-muted) !important;
+  text-align: justify;
+  font-weight: bold;
+  margin-left: 20px !important;
+}
+.blog-email .blog-email-right button {
+  padding: 15px 30px;
+  border-radius: 30px;
+  font-size: 16px;
+  border: none;
+  background: var(--primary);
+  color: #fff;
+  font-weight: bold;
+  transition: 0.5s ease;
+}
+.blog-email .blog-email-right button:hover {
+  background: black;
+  color: white;
+  transform: scale(0.9);
+}
+.blog-project-main {
+  margin-top: 80px;
+}
+.blog-content-more-card {
+  width: 100%;
+
+  overflow: hidden;
+}
+.blog-img-1 img {
+  width: 100%;
+  object-fit: cover;
+  height: 250px;
+}
+.img-blog4 {
+  width: 100% !important;
+  margin-top: 22px;
+}
+
+/* CONTACT-US */
+.contact-pages {
+  width: 100%;
+  min-height: 100vh;
+  overflow: hidden;
+}
+.contact-media {
+  width: 60%;
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+.light .service-pages h2 {
+  color: var(--text-main);
+}
+.light .service-pages p {
+  color: var(--text-muted);
+}
+.contact-media a {
+  padding: 5px 9px;
+  background: #333;
+  border-radius: 50%;
+  font-weight: bold;
+  transition: 0.5s all ease;
+}
+.contact-media a:hover {
+  background: var(--primary);
+  font-weight: bold;
+  color: #fff;
+}
+.contact-details {
+  margin-top: 40px;
+}
+.contact-details p {
+  font-size: 14px;
+}
+.contact-details-info {
+  width: 100%;
+}
+.contact-info-section {
+  margin-top: 40px;
+}
+.contact-line {
+  width: 3px;
+  height: 80px;
+  background: var(--primary);
+  font-weight: bold;
+}
+.contact-info-section .icons-contact {
+  font-size: 55px;
+  color: var(--primary);
+  font-weight: bold;
+}
+.contact-left h5 {
+  font-size: 25px;
+  color: #fff;
+  font-weight: bold;
+}
+.light .contact-left h5 {
+  color: var(--text-main);
+}
+.contact-left p {
+  font-size: 14px;
+}
+.map-location {
+  margin-top: 50px;
+}
+.map-location iframe {
+  width: 100%;
+  height: 500px;
+}
+.getinto-touch {
+  margin-top: 50px;
+}
+.getinto-touch p {
+  font-size: 14px;
+}
+.contact-form {
+  width: 100%;
+
+  margin-top: 50px;
+  border: 1px solid #333;
+  padding: 45px 40px;
+  border-radius: 30px;
+}
+.light .contact-form {
+  border: 1px solid rgb(206, 206, 206);
+}
+.contact-form-info .form-control {
+  background: var(----bg-main);
+  padding: 20px 10px;
+  border: 1px solid #333;
+  background: transparent;
+  border-radius: 12px;
+  color: #fff;
+}
+.light .contact-form .form-control {
+  border: 1px solid rgb(206, 206, 206);
+}
+.contact-form-info .form-control::placeholder {
+  color: #8b8b8b !important;
+  font-weight: bold;
+}
+.contact-form-info:focus {
+  background: transparent;
+  border-color: #5a78ff;
+  box-shadow: none;
+  color: #fff;
+}
+textarea.contact-form-info {
+  resize: none;
+}
+.form-check input {
+  background: var(--bg-sidebar);
+  border: 1px solid rgb(102, 99, 99);
+}
+.msz-btn button {
+  background: var(--primary);
+  color: #fff;
+  font-weight: bold;
+  padding: 20px 40px;
+  border-radius: 30px;
+  border: none;
+  transition: 0.5s all ease;
+  font-size: 16px;
+}
+.msz-btn button:hover {
+  background: black;
+  transform: scale(0.9);
+}

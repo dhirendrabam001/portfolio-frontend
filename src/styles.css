@@ -1,0 +1,18 @@
+.dark {
+  --bg-main: #252525;
+  --bg-sidebar: #4f4f4f;
+  --text-main: #ffffff;
+  --text-muted: #bbbbbb;
+  --primary: #3b5bfd;
+}
+
+.light {
+  --bg-main: #ffff; /* page background */
+  --bg-sidebar: #ffffff; /* sidebar card */
+  --bg-card: #ffffff; /* cards */
+  --text-main: #111827; /* main text */
+  --text-muted: #6b7280; /* muted text */
+  --primary: #4f6df5; /* blue like screenshot */
+  --border-soft: #e5e7eb;
+  --shadow-soft: 0 10px 25px rgba(0, 0, 0, 0.06);
+}
