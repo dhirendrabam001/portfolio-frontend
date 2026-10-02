@@ -4,7 +4,7 @@ export const DURATION = { fast: 0.35, base: 0.8, slow: 1.2 };
 export const STAGGER = 0.12;
 
 export const INTRO_SESSION_KEY = "portfolio-intro-seen";
-export const INTRO_DURATION_MS = 2600;
+export const INTRO_DURATION_MS = 5300;
 
 const computeIntroPlays = () => {
   if (typeof window === "undefined") return false;
@@ -20,4 +20,4 @@ const computeIntroPlays = () => {
 export const INTRO_PLAYS = computeIntroPlays();
 
 // Page entrance animations wait for the intro curtain to open
-export const ENTRANCE_DELAY = INTRO_PLAYS ? 2.3 : 0.1;
+export const ENTRANCE_DELAY = INTRO_PLAYS ? 5.0 : 0.1;
