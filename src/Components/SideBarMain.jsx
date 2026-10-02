@@ -1,4 +1,11 @@
 import { useEffect, useState } from "react";
+import { motion } from "framer-motion";
+import {
+  DURATION,
+  EASE,
+  ENTRANCE_DELAY,
+  STAGGER,
+} from "../Animated/motionTokens";
 import IconBar from "./Sidebar/Iconbar";
 import ProfileSection from "./Sidebar/ProfileSection";
 import SocialMedia from "./Sidebar/SocialMedia";
@@ -10,7 +17,6 @@ import ExperienceContent from "./Sidebar/ExperienceContent";
 import BannerHome from "./Sidebar/BannerHome";
 
 const SideBarMain = () => {
-  const [active, setActive] = useState("Home");
   const [theme, setTheme] = useState("dark");
 
   useEffect(() => {
@@ -19,33 +25,67 @@ const SideBarMain = () => {
   }, [theme]);
 
   const toggleTheme = () => {
-    setTheme((pre) => (pre === "light" ? "dark" : "light"));
+    setTheme((prev) => (prev === "light" ? "dark" : "light"));
   };
 
   return (
     <>
-      <section className="sidebar-main d-flex justify-content-center align-items-center">
-        <div className="iconbar">
-          <IconBar theme={theme} toggleTheme={toggleTheme} />
-        </div>
+      {/* Fixed icon strip — far left */}
+      <motion.div
+        className="iconbar"
+        initial={{ opacity: 0, x: -44 }}
+        animate={{ opacity: 1, x: 0 }}
+        transition={{ duration: DURATION.base, delay: ENTRANCE_DELAY, ease: EASE }}
+      >
+        <IconBar theme={theme} toggleTheme={toggleTheme} />
+      </motion.div>
 
-        <div className="sidebar-profile">
-          <ProfileSection />
-          <SocialMedia />
-          <SidebarNav />
-          <HireButton />
-        </div>
-        <div className="homecon">
-          <div className="main-content-right">
-            <TypeText />
-            <ViewBotton />
+      {/* Fixed profile sidebar */}
+      <motion.div
+        className="sidebar-profile"
+        initial={{ opacity: 0, x: -80 }}
+        animate={{ opacity: 1, x: 0 }}
+        transition={{
+          duration: DURATION.slow,
+          delay: ENTRANCE_DELAY + 0.1,
+          ease: EASE,
+        }}
+      >
+        <ProfileSection />
+        <SocialMedia />
+        <SidebarNav />
+        <HireButton />
+      </motion.div>
+
+      {/* Hero — content area to the right of the sidebar */}
+      <section className="hero-section">
+        <div className="hero-inner">
+          {/* Left: typewriter + description + buttons + stats */}
+          <div className="hero-text-col hero-3d-stage">
+            {[TypeText, ViewBotton, ExperienceContent].map((Block, i) => (
+              <motion.div
+                key={i}
+                initial={{ opacity: 0, y: 40, rotateX: -14, z: -60 }}
+                animate={{ opacity: 1, y: 0, rotateX: 0, z: 0 }}
+                transition={{
+                  duration: DURATION.slow,
+                  delay: ENTRANCE_DELAY + i * STAGGER * 1.5,
+                  ease: EASE,
+                }}
+                style={{ transformOrigin: "50% 100%" }}
+              >
+                <Block />
+              </motion.div>
+            ))}
           </div>
-          <ExperienceContent />
-        </div>
-        <div className="img-con">
-          <BannerHome />
+
+          {/* Right: profile image */}
+          <div className="hero-img-col">
+            <BannerHome />
+          </div>
         </div>
       </section>
+
       <hr className="left-hr" />
     </>
   );

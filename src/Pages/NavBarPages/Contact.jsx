@@ -17,25 +17,34 @@ const Contact = () => {
     message: "",
   });
 
+  const [sending, setSending] = useState(false);
+
   const changeHandle = (e) => {
     setFormData({ ...formData, [e.target.name]: e.target.value });
   };
 
   const handleSubmit = async (e) => {
     e.preventDefault();
-    if (
-      !formData.name ||
-      !formData.email ||
-      !formData.number ||
-      !formData.location ||
-      !formData.message
-    ) {
-      toast.error("Please Field All Required");
+    if (sending) return;
+
+    const data = Object.fromEntries(
+      Object.entries(formData).map(([key, value]) => [key, value.trim()]),
+    );
+
+    if (Object.values(data).some((value) => !value)) {
+      toast.error("Please fill in all required fields");
+      return;
     }
+    if (!/^\S+@\S+\.\S+$/.test(data.email)) {
+      toast.error("Please enter a valid email address");
+      return;
+    }
+
+    setSending(true);
     try {
-      const res = await axios.post(
+      await axios.post(
         "https://portfolio-backend-1-zwa0.onrender.com/api/user/userData",
-        formData
+        data,
       );
       toast.success("Thank you for contacting us");
 
@@ -49,6 +58,8 @@ const Contact = () => {
     } catch (error) {
       console.error(error);
       toast.error(error.response?.data?.message || "Server error ❌");
+    } finally {
+      setSending(false);
     }
   };
 
@@ -132,7 +143,7 @@ const Contact = () => {
                       <MdPhonelinkRing className="icons-contact" />
                       <div className="contact-left">
                         <h5>Phone</h5>
-                        <p>+916284844323</p>
+                        <p>+977 9709367836</p>
                       </div>
                     </div>
                   </div>
@@ -145,7 +156,7 @@ const Contact = () => {
                       <FaLocationPinLock className="icons-contact" />
                       <div className="contact-left">
                         <h5>Location</h5>
-                        <p>Chandigarh City, India</p>
+                        <p>Kathmandu Nepal</p>
                       </div>
                     </div>
                   </div>
@@ -167,10 +178,14 @@ const Contact = () => {
             </AnimationPath>
             <div className="map-location">
               <iframe
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d13744.554105595782!2d75.947376237911!3d30.545390024863188!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x391069a660696aef%3A0x3bc789e57615106b!2sChandigarh%2C%20Punjab%20148023!5e0!3m2!1sen!2sin!4v1768553727613!5m2!1sen!2sin"
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d56516.277768685635!2d85.28493324095915!3d27.709030241454187!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39eb198a307baabf%3A0xb5137c1bf18db1ea!2sKathmandu%2C%20Bagmati%20Province%2044600!5e0!3m2!1sen!2snp!4v1790926741766!5m2!1sen!2snp"
+                width="600"
+                height="450"
+                title="Location map"
+                style={{ border: 0 }}
                 allowFullScreen
                 loading="lazy"
-                referrerPolicy="no-referrer-when-downgrade"
+                referrerPolicy="strict-origin-when-cross-origin"
               ></iframe>
             </div>
             {/* TOUCH WITH ME */}
@@ -279,8 +294,8 @@ const Contact = () => {
                       </div>
                     </div>
                     <div className="col-12 text-start msz-btn">
-                      <button type="submit" className="send-btn">
-                        Send Message
+                      <button type="submit" className="send-btn" disabled={sending}>
+                        {sending ? "Sending..." : "Send Message"}
                       </button>
                     </div>
                   </div>

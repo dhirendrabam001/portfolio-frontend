@@ -40,12 +40,16 @@ const Project = () => {
       </div>
       {/* CARD */}
       <div className="project-card mt-5">
-        <div className="row align-items-center g-5 pages">
+        <div className="row align-items-stretch g-5 pages">
           {ProjectData.map((item, index) => {
             return (
               <div className="col-12 col-md-6 col-lg-6" key={index}>
-                <div className="card-info">
-                  <AnimationPath direction="left" delay={0.25}>
+                <div className="card-info h-100">
+                  <AnimationPath
+                    direction="3d"
+                    delay={0.25}
+                    className="project-card-inner"
+                  >
                     <div className="card-img">
                       <img
                         src={item.img}

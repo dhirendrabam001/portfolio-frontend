@@ -1,23 +1,29 @@
-import { FaBolt } from "react-icons/fa6";
-import { BsCart3 } from "react-icons/bs";
+import { Link } from "react-router-dom";
+import { HiOutlineBriefcase } from "react-icons/hi2";
 import { FaMoon, FaSun } from "react-icons/fa";
 
 const IconBar = ({ theme, toggleTheme }) => {
   return (
     <div className="icon-bar py-5 position-relative">
-      <div className="icon bolt mb-3 position-relative">
-        <FaBolt />
-        <span className="position-absolute badge bg-warning text-dark top-0 start-100 translate-middle my-2">
-          02
-        </span>
-      </div>
-
-      <div className="icon bs-card mb-3">
-        <BsCart3 />
-      </div>
-      <div className="icon light-con mb-3" onClick={toggleTheme}>
+      <button
+        type="button"
+        className="icon mb-3 border-0"
+        onClick={toggleTheme}
+        title={theme === "light" ? "Switch to dark mode" : "Switch to light mode"}
+        aria-label="Toggle theme"
+      >
         {theme === "light" ? <FaMoon /> : <FaSun />}
-      </div>
+      </button>
+
+      <Link
+        to="/portfolio"
+        className="icon icon-status mb-3"
+        title="Available for work"
+        aria-label="Available for work - view portfolio"
+      >
+        <HiOutlineBriefcase />
+        <span className="status-dot"></span>
+      </Link>
     </div>
   );
 };

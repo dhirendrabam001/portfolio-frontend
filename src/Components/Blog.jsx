@@ -43,7 +43,7 @@ const Blog = () => {
           {BlogData.map((item, index) => {
             return (
               <div className="col-12 col-md-4 col-lg-4" key={index}>
-                <AnimationPath direction="left" delay={0.5}>
+                <AnimationPath direction="3d" delay={0.5}>
                   <div className="blog-content">
                     <div className="blog-img">
                       <img

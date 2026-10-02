@@ -64,7 +64,7 @@ createRoot(document.getElementById("root")).render(
         {/* Project Routes */}
         <Route path="/dashboard-details" element={<DashBoardRoutes />} />
         <Route path="/shop-details" element={<ShopDetailsRoutes />} />
-        <Route path="ecommerce-details" element={<EcommerceRoutes />} />
+        <Route path="/ecommerce-details" element={<EcommerceRoutes />} />
         <Route path="/jobportal-details" element={<JobPortalRoutes />} />
         <Route path="/smpacking-details" element={<SmpackingRoutes />}></Route>
         <Route

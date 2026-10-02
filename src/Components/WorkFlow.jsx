@@ -1,9 +1,20 @@
+import { useRef } from "react";
+import { motion, useScroll, useTransform } from "framer-motion";
 import AnimationPath from "../Animated/AnimationPath";
 import { FaArrowRightLong } from "react-icons/fa6";
 import { Link } from "react-router-dom";
 const WorkFlow = () => {
+  const ref = useRef(null);
+  const { scrollYProgress } = useScroll({
+    target: ref,
+    offset: ["start end", "end start"],
+  });
+  // background drifts slower than the page for depth
+  const bgY = useTransform(scrollYProgress, [0, 1], ["-8%", "8%"]);
+
   return (
-    <section className="work-main py-3 dashboard-wrok">
+    <section ref={ref} className="work-main py-3 dashboard-wrok">
+      <motion.div className="work-parallax" style={{ y: bgY }} aria-hidden="true" />
       <div className="work-section">
         <div className="row g-5 g-sm-0">
           <div className="col-12 col-md-6 col-lg-6">

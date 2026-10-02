@@ -7,6 +7,11 @@ const variants = {
   top: { hidden: { opacity: 0, y: -70 }, visible: { opacity: 1, y: 0 } },
   bottom: { hidden: { opacity: 0, y: 70 }, visible: { opacity: 1, y: 0 } },
   fade: { hidden: { opacity: 0 }, visible: { opacity: 1 } },
+  // depth reveal: tilts up out of the screen, blur to sharp
+  "3d": {
+    hidden: { opacity: 0, y: 50, rotateX: -18, transformPerspective: 900, scale: 0.96, filter: "blur(6px)" },
+    visible: { opacity: 1, y: 0, rotateX: 0, scale: 1, filter: "blur(0px)" },
+  },
 };
 
 const AnimationPath = ({

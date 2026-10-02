@@ -16,3 +16,35 @@
   --border-soft: #e5e7eb;
   --shadow-soft: 0 10px 25px rgba(0, 0, 0, 0.06);
 }
+
+/* ── Global typography baseline ─────────────────────────────────────────────
+   Plus Jakarta Sans  → headings  (geometric, modern, top portfolio choice)
+   DM Sans            → body text (clean, optical-size-aware, highly legible)
+─────────────────────────────────────────────────────────────────────────── */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html {
+  -webkit-text-size-adjust: 100%;
+}
+
+body {
+  font-family: "DM Sans", "Inter", system-ui, sans-serif;
+  font-optical-sizing: auto;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  line-height: 1.6;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Plus Jakarta Sans", "DM Sans", system-ui, sans-serif;
+  letter-spacing: -0.02em;
+  line-height: 1.2;
+}
+
+p, span, a, li, button, input, textarea, label {
+  font-family: "DM Sans", "Inter", system-ui, sans-serif;
+}

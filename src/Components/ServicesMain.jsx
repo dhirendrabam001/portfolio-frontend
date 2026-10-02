@@ -1,4 +1,4 @@
-import { FaArrowRightLong } from "react-icons/fa6";
+﻿import { FaArrowRightLong } from "react-icons/fa6";
 import AnimationPath from "../Animated/AnimationPath";
 import { Link } from "react-router-dom";
 
@@ -44,7 +44,7 @@ const ServicesMain = () => {
       <div className="service-card">
         <div className="row g-4">
           <div className="col-12 col-md-4 col-lg-3">
-            <AnimationPath direction="left" delay={0.2}>
+            <AnimationPath direction="3d" delay={0.2} className="h-100">
               <div className="content-main">
                 <div className="content-img py-3">
                   <img src="/node.webp" alt="node" />
@@ -61,7 +61,7 @@ const ServicesMain = () => {
             </AnimationPath>
           </div>
           <div className="col-12 col-md-4 col-lg-3">
-            <AnimationPath direction="left" delay={0.2}>
+            <AnimationPath direction="3d" delay={0.2} className="h-100">
               <div className="content-main second-card">
                 <div className="content-img py-3">
                   <img src="/react.webp" className="img-rec" alt="node" />
@@ -78,7 +78,7 @@ const ServicesMain = () => {
             </AnimationPath>
           </div>
           <div className="col-12 col-md-4 col-lg-3">
-            <AnimationPath direction="left" delay={0.2}>
+            <AnimationPath direction="3d" delay={0.2} className="h-100">
               <div className="content-main">
                 <div className="content-img py-3">
                   <img
@@ -100,7 +100,7 @@ const ServicesMain = () => {
             </AnimationPath>
           </div>
           <div className="col-12 col-md-4 col-lg-3">
-            <AnimationPath direction="left" delay={0.2}>
+            <AnimationPath direction="3d" delay={0.2} className="h-100">
               <div className="content-main">
                 <div className="content-img py-3">
                   <img src="/postman.svg" width={"20px"} alt="node" />
@@ -119,7 +119,7 @@ const ServicesMain = () => {
 
           {/* card-2 */}
           <div className="col-12 col-md-4 col-lg-3">
-            <AnimationPath direction="bottom" delay={0.2}>
+            <AnimationPath direction="3d" delay={0.2} className="h-100">
               <div className="content-main">
                 <div className="content-img py-3 d-flex gap-2">
                   <img src="/html.webp" width={"25px"} alt="node" />
@@ -137,7 +137,7 @@ const ServicesMain = () => {
             </AnimationPath>
           </div>
           <div className="col-12 col-md-4 col-lg-3">
-            <AnimationPath direction="bottom" delay={0.2}>
+            <AnimationPath direction="3d" delay={0.2} className="h-100">
               <div className="content-main">
                 <div className="content-img py-3 d-flex gap-2">
                   <img src="/html.webp" width={"25px"} alt="node" />
@@ -155,7 +155,7 @@ const ServicesMain = () => {
             </AnimationPath>
           </div>
           <div className="col-12 col-md-4 col-lg-3">
-            <AnimationPath direction="bottom" delay={0.2}>
+            <AnimationPath direction="3d" delay={0.2} className="h-100">
               <div className="content-main">
                 <div className="content-img py-3 d-flex gap-2">
                   <img src="/html.webp" width={"25px"} alt="node" />
@@ -173,7 +173,7 @@ const ServicesMain = () => {
             </AnimationPath>
           </div>
           <div className="col-12 col-md-4 col-lg-3">
-            <AnimationPath direction="bottom" delay={0.2}>
+            <AnimationPath direction="3d" delay={0.2} className="h-100">
               <div className="content-main">
                 <div className="content-img py-3 d-flex gap-3">
                   <img
