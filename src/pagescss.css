@@ -172,6 +172,9 @@ h5 {
 .service-ques p {
   color: var(--text-muted);
 }
+.light .service-heading h2 {
+  color: var(--text-main);
+}
 .service-heading span {
   color: var(--primary);
 }

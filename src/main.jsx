@@ -9,6 +9,9 @@ import App from "./App.jsx";
 import "./styles.css";
 import "./pagescss.css";
 import ScrollTop from "./Data/ScrollTop.jsx";
+import { initTheme } from "./Data/theme.js";
+
+initTheme();
 import BlogPageRoutes from "./Router/BlogPageRoutes.jsx";
 import OptimizeBlogRoutes from "./Router/OptimizeBlogRoutes.jsx";
 import ImproveBlogRoutes from "./Router/ImproveBlogRoutes.jsx";

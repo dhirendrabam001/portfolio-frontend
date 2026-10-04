@@ -1,4 +1,5 @@
 import { useEffect, useState } from "react";
+import { getSavedTheme } from "../../Data/theme";
 import IconBar from "../../Components/Sidebar/Iconbar";
 import ProfileSection from "../../Components/Sidebar/ProfileSection";
 import SocialMedia from "../../Components/Sidebar/SocialMedia";
@@ -8,7 +9,7 @@ import ServicesPage from "../../Pages/NavBarPages/ServicesPage";
 
 const ServicesRoutes = () => {
   const [active, setActive] = useState("Home");
-  const [theme, setTheme] = useState("dark");
+  const [theme, setTheme] = useState(getSavedTheme);
 
   useEffect(() => {
     document.body.classList.remove("light", "dark");

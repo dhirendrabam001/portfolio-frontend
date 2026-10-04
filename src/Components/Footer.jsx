@@ -31,8 +31,8 @@ const contacts = [
     text: "dhirendrabam12345@gmail.com",
     href: "mailto:dhirendrabam12345@gmail.com",
   },
-  { icon: <HiOutlinePhone />, text: "+91 62848 44323", href: "tel:+916284844323" },
-  { icon: <HiOutlineMapPin />, text: "Chandigarh, India" },
+  { icon: <HiOutlinePhone />, text: "+977 970 936 7836", href: "tel:+9779709367836" },
+  { icon: <HiOutlineMapPin />, text: "Kathmandu, Nepal" },
 ];
 
 const Footer = () => {

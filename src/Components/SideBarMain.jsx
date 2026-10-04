@@ -1,4 +1,5 @@
 import { useEffect, useState } from "react";
+import { getSavedTheme } from "../Data/theme";
 import { motion } from "framer-motion";
 import {
   DURATION,
@@ -17,7 +18,7 @@ import ExperienceContent from "./Sidebar/ExperienceContent";
 import BannerHome from "./Sidebar/BannerHome";
 
 const SideBarMain = () => {
-  const [theme, setTheme] = useState("dark");
+  const [theme, setTheme] = useState(getSavedTheme);
 
   useEffect(() => {
     document.body.classList.remove("light", "dark");

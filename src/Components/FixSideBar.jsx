@@ -1,4 +1,5 @@
 import { useEffect, useState } from "react";
+import { getSavedTheme } from "../Data/theme";
 import IconBar from "./Sidebar/Iconbar";
 import ProfileSection from "./Sidebar/ProfileSection";
 import SocialMedia from "./Sidebar/SocialMedia";
@@ -7,7 +8,7 @@ import HireButton from "./Sidebar/HireBotton";
 import BlogPages from "../Pages/BlogPages";
 const FixSideBar = () => {
   const [active, setActive] = useState("Home");
-  const [theme, setTheme] = useState("dark");
+  const [theme, setTheme] = useState(getSavedTheme);
 
   useEffect(() => {
     document.body.classList.remove("light", "dark");
